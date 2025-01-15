@@ -1,35 +1,70 @@
-.row{
+.row {
     margin-left: 20px;
     color: #fff;
 }
 
-.posters{
+.posters {
     display: flex;
     padding: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
 }
 
-.posters::-webkit-scrollbar{
+.posters::-webkit-scrollbar {
     display: none;
 }
 
-.poster{
+.poster,
+.smallPoster {
     cursor: pointer;
+    background-color: #222;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+}
+
+.poster:hover,
+.smallPoster:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.poster {
     max-height: 250px;
-    margin-right: 10px;
 }
 
-.smallPoster{
-    cursor: pointer;
+.smallPoster {
     max-height: 150px;
-    margin-right: 10px;
 }
 
-.poster:hover{
-    transform: scale(1.09);
+.videoPlayer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 80%;
+    max-width: 800px;
 }
 
-.smallPoster:hover{
-    transform: scale(1.09);
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+    color: #e50914;
 }

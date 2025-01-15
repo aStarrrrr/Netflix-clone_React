@@ -20,3 +20,9 @@
     right: 20px;
     width: 30px;
 }
+
+.watermark{
+    position: fixed;
+    color: aliceblue;
+    right: 60px;
+}
