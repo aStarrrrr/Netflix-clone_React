@@ -1,8 +1,9 @@
 .banner{
     background-image: url('https://wallpaperaccess.com/full/2703652.png');
     background-size: cover;
-    height: 448px;
+    height: 510px;
     color: white;
+    transition: background-image 1.5s ease-in-out;
 }
 
 .content{
@@ -18,6 +19,7 @@
     margin-bottom: 1rem;
     padding-bottom: 0.3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    opacity: 1;
 }
 
 .button {
@@ -55,9 +57,14 @@
     max-width: 600px;
     margin-bottom: 1.5rem;
     color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
 }
 
 .fade_bottum{
-    height: 7.4rem;
+    height: 11.3rem;
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+}
+
+.content{
+    transition: opacity 0.8s ease-in-out;
 }
