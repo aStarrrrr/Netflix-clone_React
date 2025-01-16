@@ -4,7 +4,7 @@ import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import Banner from './Components/Banner/Banner';
 import RowPost from './Components/RowPost/RowPost';
-import {originals,action,comedy,horror,romance,documentaries} from './Urls'
+import {originals,action,comedy,horror,adventure,documentaries, adventure} from './Urls'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <RowPost url={action} title = 'Action' isSmall/>
       <RowPost url={comedy} title = 'Comedy' isSmall/>
       <RowPost url={horror} title = 'Horror' isSmall/>
-      <RowPost url={romance} title = 'Romance' isSmall/>
+      <RowPost url={adventure} title = 'Adventure' isSmall/>
       <RowPost url={documentaries} title = 'Documentaries' isSmall/>
     </div>
   );
