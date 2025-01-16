@@ -4,7 +4,7 @@ import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import Banner from './Components/Banner/Banner';
 import RowPost from './Components/RowPost/RowPost';
-import {originals,action,comedy,horror,adventure,documentaries, adventure} from './Urls'
+import {originals,action,comedy,horror,documentaries, adventure} from './Urls'
 
 function App() {
   return (
