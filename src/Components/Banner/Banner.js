@@ -72,12 +72,7 @@ function Banner() {
             {currentMovie ? currentMovie.title || currentMovie.name : ''}
           </h1>
           <div className="banner_button">
-            <button
-              className="button"
-              onClick={() => handlePlay(currentMovie?.id)}
-            >
-              Play
-            </button>
+            <button className="button" onClick={() => handlePlay(currentMovie?.id)}><i class="fa-solid fa-play"></i> Play</button>
             <button className="button">My List</button>
           </div>
           <h1 className="description">
